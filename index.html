@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body onload="load()"> 
+    <nav>
+        <h2>Gallary</h2>
+        <label for="uploader" class="upload">Upload</label>
+        <input id="uploader" type="file" onchange="Upload()" style="display: none;">
+    </nav>
+
+    <div class="previewBox" id="previewBox"style="display:none;">
+
+        <button id="Closebtn" onclick="PreviewClose()">&#x2715;</button>
+
+        <button id="previous" onclick="previousBtn()">&lt;</button>
+       
+        <img id="previewImage" src="./Wallpaper/illustration-anime-character-rain (2).jpg" alt="">
+       
+        <button id="next" onclick="nextBtn()">&gt;</button>
+
+        <!-- <a id="Download"href="" >
+            <button>Download</button>
+        </a> -->
+    </div>
+
+    <div class="album">
+        <img src="./Image/abstract-323a.jpg" onclick="Preview(this.src)" data-img>
+        <img src="./Image/Copy of Dreamy-World-Digital-Art-Wallpaper-HD-Wallpapers.jpg" onclick="Preview(this.src)" data-img>
+        <img src="./Image/fantasy_art_scenery_wallpaper_benoit_patterlini_03 - Copy - Copy.jpg" onclick="Preview(this.src)" data-img>
+        <img src="./Image/abstract-366a.jpg" onclick="Preview(this.src)" data-img>
+        <img src="./Image/Audi R8 racer.jpg" onclick="Preview(this.src)" data-img>
+        <img src="./Image/aston_martin_cc100_speedster_concept-1920x1080.jpg" onclick="Preview(this.src)" data-img>
+        
+    </div>
+    <footer>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illum!</p>
+                <p>&copy; Created By YourName</p>
+            </div>
+    </footer>
+    <script src="./Script/script.js"></script>
+</body>
+</html>
